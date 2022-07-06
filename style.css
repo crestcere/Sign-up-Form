@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./assets/Norse-Bold.otf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #73796e12;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    /* display: flex; */
+    /* height: 100%; */
+    /* width: min(30vw, 20px); */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    width: 30vw;
+}
+
+.wrapper > .image {
+    /* max-height: 100vh; */
+    /* position: absolute; */
+    /* margin: auto; */
+    height: 100vh;
+    max-height: 100vh;
+    width: 30vw;
+    /* width: 20vw; */
+    /* max-width: 100%; */
+}
+
+.wrapper > .sidebar {
+    background-color: rgba(0, 0, 0, 0.586);
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    /* align-items: 30px; */
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* left: center; */
+    height: 100px;
+    width: 30vw;
+}
+.sidebar_img {
+    /* height: 60px; */
+}
+.sidebar_text {
+    font-family: "Norse Bold";
+    font-size: 5vh;
+    color: white;
+}
+
+.bodys {
+    display: flex;
+    flex-direction: column; /* To keep form, text and button in horizontal order*/
+    justify-content: center;
+    align-items: centers;
+    margin: 10px;
+}
+
+.text {
+    margin: 10px;
+    display: flex;
+    font-weight: bolder;
+}
+
+.form_div {
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 5px 5px 5px rgba(165, 165, 165, 0.24);
+}
+
+fieldset {
+    width: 100%;
+}
+
+.form {
+    /* width: max-content; */
+}
+
+.form > .first,
+.form > .second,
+.form > .third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first > div * {
+    display: flex;
+    flex-direction: column;
+}
+.second > div * {
+    display: flex;
+    flex-direction: column;
+}
+.third > div * {
+    display: flex;
+    flex-direction: column;
+}
+
+
+button {
+    background-color: #596D48;
+    color: white;
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* .first,
+.second,
+.third {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
