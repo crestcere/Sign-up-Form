@@ -72,6 +72,7 @@ body {
     display: flex;
     width: 100%;
     box-shadow: 0 5px 5px 5px rgba(165, 165, 165, 0.24);
+    background-color: white;
 }
 
 fieldset {
@@ -79,30 +80,33 @@ fieldset {
 }
 
 .form {
-    /* width: max-content; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
 }
 
 .form > .first,
-.form > .second,
-.form > .third {
+.form > .second {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
 }
 
-.first > div * {
-    display: flex;
-    flex-direction: column;
-}
-.second > div * {
-    display: flex;
-    flex-direction: column;
-}
-.third > div * {
-    display: flex;
-    flex-direction: column;
+.form > * input {
+    border-radius: 5px;
+    border: solid 3px #E5E7EB;
+    --valid: solid 3px green;
+    --invalid: solid 3px red;
 }
 
+.form > * input:focus {
+    border: solid 3px blue;
+}
+
+.form > * input:valid {
+    border: var(--valid);
+}
 
 button {
     background-color: #596D48;
@@ -116,11 +120,3 @@ button {
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-/* .first,
-.second,
-.third {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
